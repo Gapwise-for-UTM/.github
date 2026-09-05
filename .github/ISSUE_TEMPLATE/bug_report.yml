@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a reproducible problem in a Gapwise repository.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please use the repository that owns the affected behavior and avoid posting credentials, auth tokens, private timetable contents, or other sensitive student information.
+
+        **Security vulnerabilities should be reported privately to security@gapwise.ca instead of through this form.**
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior clearly and concisely.
+      placeholder: Tell us what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the behavior you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Give the smallest reliable sequence of steps that reproduces the problem.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser/app version, operating system, device, or relevant commit/version.
+      placeholder: e.g. Firefox 142 on Ubuntu 26.04
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Add screenshots, logs, route/data identifiers, or other non-sensitive context if useful.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues before filing this report.
+          required: true
+        - label: This report does not contain credentials, secrets, auth tokens, or private student data.
+          required: true
+        - label: This is not a security vulnerability that should be reported privately.
+          required: true
