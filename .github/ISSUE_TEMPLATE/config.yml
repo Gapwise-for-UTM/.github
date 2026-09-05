@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product support
+    url: https://gapwise.ca
+    about: For account help or ordinary product questions, contact support@gapwise.ca.
+  - name: Security report
+    url: mailto:security@gapwise.ca
+    about: Report vulnerabilities privately. Do not open a public security issue.
+  - name: Developer documentation
+    url: https://docs.gapwise.ca
+    about: API, SDK, data, architecture, security, and integration documentation.
+  - name: Service status
+    url: https://status.gapwise.ca
+    about: Check current service health before reporting an outage.

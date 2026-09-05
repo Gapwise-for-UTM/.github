@@ -1,0 +1,65 @@
+name: Feature request
+description: Propose a focused improvement to a Gapwise component.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Please file it in the repository that should own the behavior. Gapwise prefers focused components and one source of truth per responsibility.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Start with the student, developer, data, or operational problem rather than a preferred implementation.
+      placeholder: Describe the problem or missed opportunity.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should become easier, safer, clearer, or more reliable?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Optional. Describe an implementation direction if you have one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - Student web/PWA product
+        - Native mobile
+        - AI / MCP
+        - Campus data / routing evidence
+        - Developer documentation
+        - Status / operations
+        - Public API / SDK
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Source-of-truth or privacy considerations
+      description: Note any data ownership, deterministic-computation, privacy, security, accessibility, or cross-repository concerns.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues before filing this request.
+          required: true
+        - label: I filed this in the repository that most naturally owns the behavior.
+          required: true
