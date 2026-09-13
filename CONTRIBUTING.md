@@ -7,11 +7,11 @@ Thanks for helping improve Gapwise. The ecosystem is split into focused reposito
 | Change | Repository |
 | --- | --- |
 | Web/PWA behavior, timetable semantics, gap logic, deterministic routing, API contracts or SDK source | [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) |
-| Native iOS/Android experience | [`gapwise-mobile`](https://github.com/Gapwise-for-UTM/gapwise-mobile) |
-| OAuth/MCP integration or delegated AI behavior | [`gapwise-ai`](https://github.com/Gapwise-for-UTM/gapwise-ai) |
-| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`gapwise-data`](https://github.com/Gapwise-for-UTM/gapwise-data) |
-| Public developer documentation | [`gapwise-docs`](https://github.com/Gapwise-for-UTM/gapwise-docs) |
-| Status checks, incidents or service-health presentation | [`gapwise-status`](https://github.com/Gapwise-for-UTM/gapwise-status) |
+| Native Android experience, device integration or Android distribution | [`android`](https://github.com/Gapwise-for-UTM/android) |
+| OAuth/MCP integration or delegated AI behavior | [`ai`](https://github.com/Gapwise-for-UTM/ai) |
+| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UTM/data) |
+| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UTM/docs) |
+| Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UTM/status) |
 
 If a repository contains its own `CONTRIBUTING.md`, follow that more specific guidance.
 
@@ -51,11 +51,12 @@ The ecosystem follows a simple rule:
 
 In particular:
 
-- `gapwise-data` owns shared public campus facts;
-- the core Gapwise domain owns timetable/gap/routing semantics;
-- AI may interpret or explain bounded context, but should not become a second source of deterministic truth;
-- docs describe released behavior rather than inventing it;
-- status observes services rather than becoming a runtime dependency.
+- [`data`](https://github.com/Gapwise-for-UTM/data) owns shared public campus facts;
+- the core [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) domain owns timetable/gap/routing semantics;
+- [`android`](https://github.com/Gapwise-for-UTM/android) implements the native Android experience without becoming a second source of canonical domain truth;
+- [`ai`](https://github.com/Gapwise-for-UTM/ai) may interpret or explain bounded context, but should not become a second source of deterministic truth;
+- [`docs`](https://github.com/Gapwise-for-UTM/docs) describes released behavior rather than inventing it;
+- [`status`](https://github.com/Gapwise-for-UTM/status) observes services rather than becoming a runtime dependency.
 
 ## Commit and PR quality
 
