@@ -19,10 +19,10 @@ Repository-local files take precedence when a component needs more specific inst
 | Area | Canonical repository |
 | --- | --- |
 | Web/PWA product, deterministic student-day behavior, public API and SDK source | [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) |
-| Native iOS/Android client | [`gapwise-mobile`](https://github.com/Gapwise-for-UTM/gapwise-mobile) |
-| AI/MCP delegation boundary | [`gapwise-ai`](https://github.com/Gapwise-for-UTM/gapwise-ai) |
-| Public UTM campus facts, provenance and validation | [`gapwise-data`](https://github.com/Gapwise-for-UTM/gapwise-data) |
-| Public developer documentation | [`gapwise-docs`](https://github.com/Gapwise-for-UTM/gapwise-docs) |
-| Independent service monitoring and incident communication | [`gapwise-status`](https://github.com/Gapwise-for-UTM/gapwise-status) |
+| Native Android client and device integration | [`android`](https://github.com/Gapwise-for-UTM/android) |
+| AI/MCP delegation boundary | [`ai`](https://github.com/Gapwise-for-UTM/ai) |
+| Public UTM campus facts, provenance and validation | [`data`](https://github.com/Gapwise-for-UTM/data) |
+| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UTM/docs) |
+| Independent service monitoring and incident communication | [`status`](https://github.com/Gapwise-for-UTM/status) |
 
 For product information, visit [gapwise.ca](https://gapwise.ca). For developer documentation, visit [docs.gapwise.ca](https://docs.gapwise.ca).
