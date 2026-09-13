@@ -7,13 +7,16 @@ Thanks for helping improve Gapwise. The ecosystem is split into focused reposito
 | Change | Repository |
 | --- | --- |
 | Web/PWA behavior, timetable semantics, gap logic, deterministic routing, API contracts or SDK source | [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) |
-| Native iOS/Android experience | [`gapwise-mobile`](https://github.com/Gapwise-for-UTM/gapwise-mobile) |
-| OAuth/MCP integration or delegated AI behavior | [`gapwise-ai`](https://github.com/Gapwise-for-UTM/gapwise-ai) |
-| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`gapwise-data`](https://github.com/Gapwise-for-UTM/gapwise-data) |
-| Public developer documentation | [`gapwise-docs`](https://github.com/Gapwise-for-UTM/gapwise-docs) |
-| Status checks, incidents or service-health presentation | [`gapwise-status`](https://github.com/Gapwise-for-UTM/gapwise-status) |
+| Native Android experience, Android device integration or Android distribution | [`android`](https://github.com/Gapwise-for-UTM/android) |
+| Native iOS experience, Apple-platform integration or iOS distribution | [`ios`](https://github.com/Gapwise-for-UTM/ios) |
+| OAuth/MCP integration or delegated AI behavior | [`ai`](https://github.com/Gapwise-for-UTM/ai) |
+| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UTM/data) |
+| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UTM/docs) |
+| Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UTM/status) |
 
 If a repository contains its own `CONTRIBUTING.md`, follow that more specific guidance.
+
+Gapwise timetable identity supports UTM, UTSG, UTSC, and mixed-campus schedules. The first-party map/routing/open-data layer is currently UTM-focused. Contributions should preserve that scope distinction instead of silently treating timetable coverage as map coverage.
 
 ## Before opening an issue
 
@@ -31,15 +34,15 @@ Keep pull requests focused. A useful PR should make it easy to understand:
 1. **What changed?**
 2. **Why does this repository own the change?**
 3. **How was it verified?**
-4. **Does it alter a privacy, security, data-ownership or deterministic-computation boundary?**
+4. **Does it alter a privacy, security, campus-scope, data-ownership or deterministic-computation boundary?**
 
 When applicable:
 
 - add or update tests;
 - update public documentation when a released contract changes;
 - include screenshots or recordings for visible UI changes;
-- preserve accessibility and keyboard behavior;
-- keep privileged secrets out of browser/mobile code and repository history;
+- preserve accessibility and platform-native behavior;
+- keep privileged secrets out of browser/native code and repository history;
 - preserve provenance for campus-data changes;
 - avoid duplicating domain logic that already has a canonical implementation.
 
@@ -51,11 +54,13 @@ The ecosystem follows a simple rule:
 
 In particular:
 
-- `gapwise-data` owns shared public campus facts;
-- the core Gapwise domain owns timetable/gap/routing semantics;
-- AI may interpret or explain bounded context, but should not become a second source of deterministic truth;
-- docs describe released behavior rather than inventing it;
-- status observes services rather than becoming a runtime dependency.
+- [`data`](https://github.com/Gapwise-for-UTM/data) owns shared public UTM campus facts;
+- the core [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) domain owns timetable/gap/routing semantics;
+- [`android`](https://github.com/Gapwise-for-UTM/android) implements the native Android experience without becoming a second source of canonical domain truth;
+- [`ios`](https://github.com/Gapwise-for-UTM/ios) implements the native iOS experience without becoming a second source of canonical domain truth;
+- [`ai`](https://github.com/Gapwise-for-UTM/ai) may interpret or explain bounded context, but should not become a second source of deterministic truth;
+- [`docs`](https://github.com/Gapwise-for-UTM/docs) describes released behavior rather than inventing it;
+- [`status`](https://github.com/Gapwise-for-UTM/status) observes services rather than becoming a runtime dependency.
 
 ## Commit and PR quality
 
@@ -63,6 +68,7 @@ Prefer descriptive commit and PR titles such as:
 
 - `fix(routing): preserve accessible-route uncertainty`
 - `feat(data): add reviewed entrance provenance`
+- `feat(ios): bootstrap native timetable import`
 - `docs(api): clarify route confidence states`
 
 Avoid combining unrelated cleanup, refactors and product changes unless they are inseparable.
