@@ -14,6 +14,8 @@ Thanks for helping improve Gapwise. The ecosystem is split into focused reposito
 | Public developer documentation | [`docs`](https://github.com/Gapwise-for-UTM/docs) |
 | Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UTM/status) |
 
+For a missing or incorrect UTM entrance, prefer the visual [Gapwise Data entrance contributor](https://data.gapwise.ca/contribute). It lets contributors place or refine the doorway on the map and submit narrow, reviewable evidence without editing GeoJSON by hand. Canonical data changes still require validation and maintainer review; use a Data repository pull request for validators, schemas, data-production tooling, or other maintainer-owned changes.
+
 If a repository contains its own `CONTRIBUTING.md`, follow that more specific guidance.
 
 Gapwise timetable identity supports UTM, UTSG, UTSC, and mixed-campus schedules. The first-party map/routing/open-data layer is currently UTM-focused. Contributions should preserve that scope distinction instead of silently treating timetable coverage as map coverage.
