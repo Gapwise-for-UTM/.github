@@ -13,11 +13,12 @@ Before reporting an outage, check **[status.gapwise.ca](https://status.gapwise.c
 Open a GitHub issue in the repository that owns the behavior:
 
 - Core web/PWA, timetable, gaps, routing, API: [`gapwise`](https://github.com/Gapwise-for-UofT/gapwise/issues)
-- Native iOS/Android: [`gapwise-mobile`](https://github.com/Gapwise-for-UofT/gapwise-mobile/issues)
-- AI/MCP integration: [`gapwise-ai`](https://github.com/Gapwise-for-UofT/gapwise-ai/issues)
-- Campus data/provenance: [`gapwise-data`](https://github.com/Gapwise-for-UofT/gapwise-data/issues)
-- Developer docs: [`gapwise-docs`](https://github.com/Gapwise-for-UofT/gapwise-docs/issues)
-- Service status/monitoring: [`gapwise-status`](https://github.com/Gapwise-for-UofT/gapwise-status/issues)
+- Native Android: [`android`](https://github.com/Gapwise-for-UofT/android/issues)
+- Native iOS: [`ios`](https://github.com/Gapwise-for-UofT/ios/issues)
+- AI/MCP integration: [`ai`](https://github.com/Gapwise-for-UofT/ai/issues)
+- Campus data/provenance: [`data`](https://github.com/Gapwise-for-UofT/data/issues)
+- Developer docs: [`docs`](https://github.com/Gapwise-for-UofT/docs/issues)
+- Service status/monitoring: [`status`](https://github.com/Gapwise-for-UofT/status/issues)
 
 ## Security
 

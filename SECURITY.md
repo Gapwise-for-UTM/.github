@@ -23,11 +23,12 @@ Please avoid accessing, modifying or retaining data that does not belong to you.
 This policy applies across the public Gapwise ecosystem, including:
 
 - `gapwise`
-- `gapwise-mobile`
-- `gapwise-ai`
-- `gapwise-data`
-- `gapwise-docs`
-- `gapwise-status`
+- `android`
+- `ios`
+- `ai`
+- `data`
+- `docs`
+- `status`
 
 Repository-specific security guidance takes precedence where present.
 
