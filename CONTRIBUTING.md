@@ -6,13 +6,13 @@ Thanks for helping improve Gapwise. The ecosystem is split into focused reposito
 
 | Change | Repository |
 | --- | --- |
-| Web/PWA behavior, timetable semantics, gap logic, deterministic routing, API contracts or SDK source | [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) |
-| Native Android experience, Android device integration or Android distribution | [`android`](https://github.com/Gapwise-for-UTM/android) |
-| Native iOS experience, Apple-platform integration or iOS distribution | [`ios`](https://github.com/Gapwise-for-UTM/ios) |
-| OAuth/MCP integration or delegated AI behavior | [`ai`](https://github.com/Gapwise-for-UTM/ai) |
-| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UTM/data) |
-| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UTM/docs) |
-| Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UTM/status) |
+| Web/PWA behavior, timetable semantics, gap logic, deterministic routing, API contracts or SDK source | [`gapwise`](https://github.com/Gapwise-for-UofT/gapwise) |
+| Native Android experience, Android device integration or Android distribution | [`android`](https://github.com/Gapwise-for-UofT/android) |
+| Native iOS experience, Apple-platform integration or iOS distribution | [`ios`](https://github.com/Gapwise-for-UofT/ios) |
+| OAuth/MCP integration or delegated AI behavior | [`ai`](https://github.com/Gapwise-for-UofT/ai) |
+| UTM buildings, geometry, entrances, routing evidence, provenance, schemas or validation | [`data`](https://github.com/Gapwise-for-UofT/data) |
+| Public developer documentation | [`docs`](https://github.com/Gapwise-for-UofT/docs) |
+| Status checks, incidents or service-health presentation | [`status`](https://github.com/Gapwise-for-UofT/status) |
 
 For a missing or incorrect UTM entrance, prefer the visual [Gapwise Data entrance contributor](https://data.gapwise.ca/contribute). It lets contributors place or refine the doorway on the map and submit narrow, reviewable evidence without editing GeoJSON by hand. Canonical data changes still require validation and maintainer review; use a Data repository pull request for validators, schemas, data-production tooling, or other maintainer-owned changes.
 
@@ -56,13 +56,13 @@ The ecosystem follows a simple rule:
 
 In particular:
 
-- [`data`](https://github.com/Gapwise-for-UTM/data) owns shared public UTM campus facts;
-- the core [`gapwise`](https://github.com/Gapwise-for-UTM/gapwise) domain owns timetable/gap/routing semantics;
-- [`android`](https://github.com/Gapwise-for-UTM/android) implements the native Android experience without becoming a second source of canonical domain truth;
-- [`ios`](https://github.com/Gapwise-for-UTM/ios) implements the native iOS experience without becoming a second source of canonical domain truth;
-- [`ai`](https://github.com/Gapwise-for-UTM/ai) may interpret or explain bounded context, but should not become a second source of deterministic truth;
-- [`docs`](https://github.com/Gapwise-for-UTM/docs) describes released behavior rather than inventing it;
-- [`status`](https://github.com/Gapwise-for-UTM/status) observes services rather than becoming a runtime dependency.
+- [`data`](https://github.com/Gapwise-for-UofT/data) owns shared public UTM campus facts;
+- the core [`gapwise`](https://github.com/Gapwise-for-UofT/gapwise) domain owns timetable/gap/routing semantics;
+- [`android`](https://github.com/Gapwise-for-UofT/android) implements the native Android experience without becoming a second source of canonical domain truth;
+- [`ios`](https://github.com/Gapwise-for-UofT/ios) implements the native iOS experience without becoming a second source of canonical domain truth;
+- [`ai`](https://github.com/Gapwise-for-UofT/ai) may interpret or explain bounded context, but should not become a second source of deterministic truth;
+- [`docs`](https://github.com/Gapwise-for-UofT/docs) describes released behavior rather than inventing it;
+- [`status`](https://github.com/Gapwise-for-UofT/status) observes services rather than becoming a runtime dependency.
 
 ## Commit and PR quality
 
